@@ -1,0 +1,54 @@
+﻿@using AppliTrAc.Models
+@model AppliTrAc.Models.Response
+
+    @{
+    ViewBag.Title = "Create";
+    }
+
+
+@using (Html.BeginForm("Create","Responses",new{id = @User.Identity.Name}))
+    {
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(model => model.StudentID)
+    @Html.HiddenFor(model => model.Date)
+
+    <br/>
+        <div class="container">
+            <h2 align="center"class="well well-small">Front of Class</h2>
+
+        </div>
+        <div>
+        </div>
+
+
+        <div class="row" align="center">
+            <div class="col-xa-12">
+                <p>
+                    <input name="Submit" type="submit" value="Front Left" class="btn btn-primary btn-small"/>
+                    <input name="Submit" type="submit" value="Front Middle" class="btn btn-primary btn-small" />
+                    <input name="Submit" type="submit" value="Front Right" class="btn btn-primary btn-small" />
+                </p>
+            </div>
+        </div>
+        <div class="row" align="center">
+            <div class="col-xa-12">
+                <p>
+                    <input name="Submit" type="submit" value="Centre Left" class="btn btn-primary btn-small" />
+                    <input name="Submit" type="submit" value="Centre Middle" class="btn btn-primary btn-small" />
+                    <input name="Submit" type="submit" value="Centre Right" class="btn btn-primary btn-small" />
+                </p>
+            </div>
+        </div>
+        <div class="row" align="center">
+            <div class="col-xa-12">
+                <p>
+                    <input name="Submit" type="submit" value="Back Left" class="btn btn-primary btn-small" />
+                    <input name="Submit" type="submit" value="Back Middle" class="btn btn-primary btn-small" />
+                    <input name="Submit" type="submit" value="Back Right" class="btn btn-primary btn-small" />
+                </p>
+            </div>
+        </div>
+
+
+
+    }

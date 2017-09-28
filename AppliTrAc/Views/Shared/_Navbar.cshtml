@@ -1,0 +1,96 @@
+﻿@using System.Drawing
+
+<style>
+    #logo {
+        height: 50px;
+        float: left;
+    }
+
+    #Students {
+        height: 50px;
+    }
+
+    #Modules {
+        height: 50px;
+    }
+
+    #Surveys {
+        height: 50px;
+    }
+
+    #Logout {
+        height: 50px;
+    }
+
+    #nav {
+        height: 70px;
+    }
+
+    #collapse {
+        height: 70px;
+    }
+</style>
+
+<div class="navbar navbar-inverse navbar-fixed-top" id="nav">
+    <div class="flex-container">
+        <div class="navbar-left">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="@Url.Action("Index", "Home")" class="navbar-brand">
+                <img id="logo" src="https://www.pact-sc.org/images/photoalbum/album_3/tac_logo.png" title="Home" alt="Home" />
+            </a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+
+                @if (User.Identity.IsAuthenticated)
+                {
+
+                    if (User.IsInRole("Admin"))
+                    {
+                        <a href="@Url.Action("Create", "Users")" class="navbar-brand">
+                            <img id="Surveys" src="https://img.clipartfest.com/b799fe381a3c5feb9ae358c2be3ad2e3_user-clipart-users-clipart_384-590.png" title="Users" alt="Users" />
+                        </a>
+                        <a href="@Url.Action("Index", "Surveys")" class="navbar-brand">
+                            <img id="Surveys" src="http://edtechteacher.org/wp-content/uploads/2014/02/Presentation-circke.png" title="Surveys" alt="Surveys" />
+                        </a>
+                        <a href="@Url.Action("Index", "Modules")" class="navbar-brand">
+                            <img id="Modules" src="http://edtechteacher.org/wp-content/uploads/2014/02/Math-circle.png" title="Modules" alt="Modules" />
+                        </a>
+                        <a href="@Url.Action("Index", "Students")" class="navbar-brand">
+                            <img id="Students" src="http://www.downloadclipart.net/medium/24876-two-users-icon-clip-art.png" title="Students" alt="Students" />
+                        </a>
+
+                    }
+                    if (User.IsInRole("Student"))
+                    {
+                        <a href="@Url.Action("Index", "Responses")" class="navbar-brand">
+                            <img id="Surveys" src="http://edtechteacher.org/wp-content/uploads/2014/02/Presentation-circke.png" title="Surveys" alt="Surveys" />
+                        </a>
+                    }
+
+                    if (User.IsInRole("Lecturer"))
+                    {
+                        <a href="@Url.Action("Index", "Surveys")" class="navbar-brand">
+                            <img id="Surveys" src="http://edtechteacher.org/wp-content/uploads/2014/02/Presentation-circke.png" title="Surveys" alt="Surveys" />
+                        </a>
+                        <a href="@Url.Action("Index", "Modules")" class="navbar-brand">
+                            <img id="Modules" src="http://edtechteacher.org/wp-content/uploads/2014/02/Math-circle.png" title="Modules" alt="Modules" />
+                        </a>
+                        <a href="@Url.Action("Index", "Students")" class="navbar-brand">
+                            <img id="Students" src="http://www.downloadclipart.net/medium/24876-two-users-icon-clip-art.png" title="Students" alt="Students" />
+                        </a>
+                    }
+                }
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <a href="@Url.Action("SignOut", "Home")" class="navbar-brand">
+                    <img id="Logout" src="http://www.clker.com/cliparts/4/8/K/S/j/6/exit-button-hi.png" title="title" alt="additional title" />
+                </a>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ProjectDBModelStoreContainer" CdmEntityContainer="ProjectDBEntities">
+    <EntitySetMapping Name="Choices">
+      <EntityTypeMapping TypeName="ProjectDBModel.Choice">
+        <MappingFragment StoreEntitySet="Choice">
+          <ScalarProperty Name="ChoiceID" ColumnName="ChoiceID" />
+          <ScalarProperty Name="ChoiceText" ColumnName="ChoiceText" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Lecturers">
+      <EntityTypeMapping TypeName="ProjectDBModel.Lecturer">
+        <MappingFragment StoreEntitySet="Lecturer">
+          <ScalarProperty Name="LecturerID" ColumnName="LecturerID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Modules">
+      <EntityTypeMapping TypeName="ProjectDBModel.Module">
+        <MappingFragment StoreEntitySet="Module">
+          <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+          <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Questions">
+      <EntityTypeMapping TypeName="ProjectDBModel.Question">
+        <MappingFragment StoreEntitySet="Question">
+          <ScalarProperty Name="QuestionID" ColumnName="QuestionID" />
+          <ScalarProperty Name="QuestionText" ColumnName="QuestionText" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Responses">
+      <EntityTypeMapping TypeName="ProjectDBModel.Response">
+        <MappingFragment StoreEntitySet="Response">
+          <ScalarProperty Name="ResponseID" ColumnName="ResponseID" />
+          <ScalarProperty Name="SurveyID" ColumnName="SurveyID" />
+          <ScalarProperty Name="QuestionID" ColumnName="QuestionID" />
+          <ScalarProperty Name="ChoiceID" ColumnName="ChoiceID" />
+          <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Students">
+      <EntityTypeMapping TypeName="ProjectDBModel.Student">
+        <MappingFragment StoreEntitySet="Student">
+          <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Surveys">
+      <EntityTypeMapping TypeName="ProjectDBModel.Survey">
+        <MappingFragment StoreEntitySet="Survey">
+          <ScalarProperty Name="SurveyID" ColumnName="SurveyID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="isActive" ColumnName="isActive" />
+          <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="ProjectDBModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="LecturerModule" TypeName="ProjectDBModel.LecturerModule" StoreEntitySet="LecturerModule">
+      <EndProperty Name="Lecturer">
+        <ScalarProperty Name="LecturerID" ColumnName="LecturerID" />
+      </EndProperty>
+      <EndProperty Name="Module">
+        <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="StudentModule" TypeName="ProjectDBModel.StudentModule" StoreEntitySet="StudentModule">
+      <EndProperty Name="Module">
+        <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+      </EndProperty>
+      <EndProperty Name="Student">
+        <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>
