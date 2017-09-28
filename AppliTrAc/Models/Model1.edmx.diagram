@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c6adf7239b9147c8a9b99890dbe52c6a" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="ProjectDBModel.Department" Width="1.5" PointX="5.25" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectDBModel.Enrollment" Width="1.5" PointX="9.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectDBModel.Lecturer" Width="1.5" PointX="3" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectDBModel.Module" Width="1.5" PointX="7.5" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectDBModel.Response" Width="1.5" PointX="12" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectDBModel.Student" Width="1.5" PointX="3" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectDBModel.Survey" Width="1.5" PointX="9.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectDBModel.sysdiagram" Width="1.5" PointX="5.75" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectDBModel.User" Width="1.5" PointX="0.75" PointY="4.5" IsExpanded="true" />
+        <AssociationConnector Association="ProjectDBModel.FK_Department_Lecturer" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectDBModel.FK_Module_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectDBModel.FK_Enrollment_Module" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectDBModel.FK_Enrollment_Student" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectDBModel.FK_Lecturer_User" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectDBModel.FK_Module_Module" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectDBModel.FK_Survey_Module" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectDBModel.FK_Response_Student" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectDBModel.FK_Response_Survey" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectDBModel.FK_Student_User" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,186 @@
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\ApplicationInsights.config
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\roslyn\csc.exe
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\roslyn\System.Collections.Immutable.dll
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\roslyn\vbc.exe
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\roslyn\VBCSCompiler.exe
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\roslyn\VBCSCompiler.exe.config
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\AppliTrAc.dll.config
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\AppliTrAc.dll
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\AppliTrAc.pdb
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\Antlr3.Runtime.dll
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\EntityFramework.dll
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\EntityFramework.SqlServer.dll
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\Microsoft.AI.Web.dll
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\Microsoft.AI.WindowsServer.dll
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\Microsoft.ApplicationInsights.dll
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\Microsoft.Web.Infrastructure.dll
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\Newtonsoft.Json.dll
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\System.Web.Helpers.dll
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\System.Web.Mvc.dll
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\System.Web.Optimization.dll
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\System.Web.Razor.dll
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\System.Web.WebPages.Deployment.dll
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\System.Web.WebPages.dll
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\System.Web.WebPages.Razor.dll
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\WebGrease.dll
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\EntityFramework.xml
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\EntityFramework.SqlServer.xml
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\Microsoft.AI.Web.xml
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\Microsoft.AI.WindowsServer.xml
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\Microsoft.ApplicationInsights.xml
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\System.Web.Helpers.xml
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\System.Web.Mvc.xml
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\System.Web.Optimization.xml
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\System.Web.Razor.xml
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\System.Web.WebPages.xml
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\System.Web.WebPages.Deployment.xml
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\System.Web.WebPages.Razor.xml
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\Antlr3.Runtime.pdb
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\bin\Newtonsoft.Json.xml
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\obj\Debug\AppliTrAc.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\obj\Debug\AppliTrAc.dll
+c:\users\user\documents\visual studio 2015\Projects\AppliTrAc\AppliTrAc\obj\Debug\AppliTrAc.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\AppliTrAc\AppliTrAc\bin\CsvReader.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\AppliTrAc\AppliTrAc\bin\LumenWorks.Framework.IO.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\AppliTrAc\AppliTrAc\bin\CsvReader.xml
+C:\Users\User\Documents\Visual Studio 2015\Projects\AppliTrAc\AppliTrAc\bin\LumenWorks.Framework.IO.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\AppliTrAc\AppliTrAc\bin\LumenWorks.Framework.IO.xml
+E:\AppliTrAc\AppliTrAc\bin\ApplicationInsights.config
+E:\AppliTrAc\AppliTrAc\bin\roslyn\csc.exe
+E:\AppliTrAc\AppliTrAc\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\AppliTrAc\AppliTrAc\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\AppliTrAc\AppliTrAc\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\AppliTrAc\AppliTrAc\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\AppliTrAc\AppliTrAc\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\AppliTrAc\AppliTrAc\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\AppliTrAc\AppliTrAc\bin\roslyn\System.Collections.Immutable.dll
+E:\AppliTrAc\AppliTrAc\bin\roslyn\System.Reflection.Metadata.dll
+E:\AppliTrAc\AppliTrAc\bin\roslyn\vbc.exe
+E:\AppliTrAc\AppliTrAc\bin\roslyn\VBCSCompiler.exe
+E:\AppliTrAc\AppliTrAc\bin\roslyn\VBCSCompiler.exe.config
+E:\AppliTrAc\AppliTrAc\bin\AppliTrAc.dll.config
+E:\AppliTrAc\AppliTrAc\bin\AppliTrAc.dll
+E:\AppliTrAc\AppliTrAc\bin\AppliTrAc.pdb
+E:\AppliTrAc\AppliTrAc\bin\Antlr3.Runtime.dll
+E:\AppliTrAc\AppliTrAc\bin\CsvReader.dll
+E:\AppliTrAc\AppliTrAc\bin\EntityFramework.dll
+E:\AppliTrAc\AppliTrAc\bin\EntityFramework.SqlServer.dll
+E:\AppliTrAc\AppliTrAc\bin\LumenWorks.Framework.IO.dll
+E:\AppliTrAc\AppliTrAc\bin\Microsoft.AI.Agent.Intercept.dll
+E:\AppliTrAc\AppliTrAc\bin\Microsoft.AI.DependencyCollector.dll
+E:\AppliTrAc\AppliTrAc\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\AppliTrAc\AppliTrAc\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\AppliTrAc\AppliTrAc\bin\Microsoft.AI.Web.dll
+E:\AppliTrAc\AppliTrAc\bin\Microsoft.AI.WindowsServer.dll
+E:\AppliTrAc\AppliTrAc\bin\Microsoft.ApplicationInsights.dll
+E:\AppliTrAc\AppliTrAc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\AppliTrAc\AppliTrAc\bin\Microsoft.Web.Infrastructure.dll
+E:\AppliTrAc\AppliTrAc\bin\Newtonsoft.Json.dll
+E:\AppliTrAc\AppliTrAc\bin\System.Web.Helpers.dll
+E:\AppliTrAc\AppliTrAc\bin\System.Web.Mvc.dll
+E:\AppliTrAc\AppliTrAc\bin\System.Web.Optimization.dll
+E:\AppliTrAc\AppliTrAc\bin\System.Web.Razor.dll
+E:\AppliTrAc\AppliTrAc\bin\System.Web.WebPages.Deployment.dll
+E:\AppliTrAc\AppliTrAc\bin\System.Web.WebPages.dll
+E:\AppliTrAc\AppliTrAc\bin\System.Web.WebPages.Razor.dll
+E:\AppliTrAc\AppliTrAc\bin\WebGrease.dll
+E:\AppliTrAc\AppliTrAc\bin\CsvReader.xml
+E:\AppliTrAc\AppliTrAc\bin\EntityFramework.xml
+E:\AppliTrAc\AppliTrAc\bin\EntityFramework.SqlServer.xml
+E:\AppliTrAc\AppliTrAc\bin\LumenWorks.Framework.IO.pdb
+E:\AppliTrAc\AppliTrAc\bin\LumenWorks.Framework.IO.xml
+E:\AppliTrAc\AppliTrAc\bin\Microsoft.AI.DependencyCollector.xml
+E:\AppliTrAc\AppliTrAc\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\AppliTrAc\AppliTrAc\bin\Microsoft.AI.Web.xml
+E:\AppliTrAc\AppliTrAc\bin\Microsoft.AI.WindowsServer.xml
+E:\AppliTrAc\AppliTrAc\bin\Microsoft.ApplicationInsights.xml
+E:\AppliTrAc\AppliTrAc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\AppliTrAc\AppliTrAc\bin\System.Web.Helpers.xml
+E:\AppliTrAc\AppliTrAc\bin\System.Web.Mvc.xml
+E:\AppliTrAc\AppliTrAc\bin\System.Web.Optimization.xml
+E:\AppliTrAc\AppliTrAc\bin\System.Web.Razor.xml
+E:\AppliTrAc\AppliTrAc\bin\System.Web.WebPages.xml
+E:\AppliTrAc\AppliTrAc\bin\System.Web.WebPages.Deployment.xml
+E:\AppliTrAc\AppliTrAc\bin\System.Web.WebPages.Razor.xml
+E:\AppliTrAc\AppliTrAc\bin\Antlr3.Runtime.pdb
+E:\AppliTrAc\AppliTrAc\bin\Newtonsoft.Json.xml
+E:\AppliTrAc\AppliTrAc\obj\Debug\AppliTrAc.csprojResolveAssemblyReference.cache
+E:\AppliTrAc\AppliTrAc\obj\Debug\AppliTrAc.dll
+E:\AppliTrAc\AppliTrAc\obj\Debug\AppliTrAc.pdb
+D:\AppliTrAc\AppliTrAc\bin\ApplicationInsights.config
+D:\AppliTrAc\AppliTrAc\bin\roslyn\csc.exe
+D:\AppliTrAc\AppliTrAc\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\AppliTrAc\AppliTrAc\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\AppliTrAc\AppliTrAc\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\AppliTrAc\AppliTrAc\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\AppliTrAc\AppliTrAc\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\AppliTrAc\AppliTrAc\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\AppliTrAc\AppliTrAc\bin\roslyn\System.Collections.Immutable.dll
+D:\AppliTrAc\AppliTrAc\bin\roslyn\System.Reflection.Metadata.dll
+D:\AppliTrAc\AppliTrAc\bin\roslyn\vbc.exe
+D:\AppliTrAc\AppliTrAc\bin\roslyn\VBCSCompiler.exe
+D:\AppliTrAc\AppliTrAc\bin\roslyn\VBCSCompiler.exe.config
+D:\AppliTrAc\AppliTrAc\bin\AppliTrAc.dll.config
+D:\AppliTrAc\AppliTrAc\bin\AppliTrAc.dll
+D:\AppliTrAc\AppliTrAc\bin\AppliTrAc.pdb
+D:\AppliTrAc\AppliTrAc\bin\Antlr3.Runtime.dll
+D:\AppliTrAc\AppliTrAc\bin\CsvReader.dll
+D:\AppliTrAc\AppliTrAc\bin\EntityFramework.dll
+D:\AppliTrAc\AppliTrAc\bin\EntityFramework.SqlServer.dll
+D:\AppliTrAc\AppliTrAc\bin\LumenWorks.Framework.IO.dll
+D:\AppliTrAc\AppliTrAc\bin\Microsoft.AI.Agent.Intercept.dll
+D:\AppliTrAc\AppliTrAc\bin\Microsoft.AI.DependencyCollector.dll
+D:\AppliTrAc\AppliTrAc\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\AppliTrAc\AppliTrAc\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\AppliTrAc\AppliTrAc\bin\Microsoft.AI.Web.dll
+D:\AppliTrAc\AppliTrAc\bin\Microsoft.AI.WindowsServer.dll
+D:\AppliTrAc\AppliTrAc\bin\Microsoft.ApplicationInsights.dll
+D:\AppliTrAc\AppliTrAc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\AppliTrAc\AppliTrAc\bin\Microsoft.Web.Infrastructure.dll
+D:\AppliTrAc\AppliTrAc\bin\Newtonsoft.Json.dll
+D:\AppliTrAc\AppliTrAc\bin\System.Web.Helpers.dll
+D:\AppliTrAc\AppliTrAc\bin\System.Web.Mvc.dll
+D:\AppliTrAc\AppliTrAc\bin\System.Web.Optimization.dll
+D:\AppliTrAc\AppliTrAc\bin\System.Web.Razor.dll
+D:\AppliTrAc\AppliTrAc\bin\System.Web.WebPages.Deployment.dll
+D:\AppliTrAc\AppliTrAc\bin\System.Web.WebPages.dll
+D:\AppliTrAc\AppliTrAc\bin\System.Web.WebPages.Razor.dll
+D:\AppliTrAc\AppliTrAc\bin\WebGrease.dll
+D:\AppliTrAc\AppliTrAc\bin\CsvReader.xml
+D:\AppliTrAc\AppliTrAc\bin\EntityFramework.xml
+D:\AppliTrAc\AppliTrAc\bin\EntityFramework.SqlServer.xml
+D:\AppliTrAc\AppliTrAc\bin\LumenWorks.Framework.IO.pdb
+D:\AppliTrAc\AppliTrAc\bin\LumenWorks.Framework.IO.xml
+D:\AppliTrAc\AppliTrAc\bin\Microsoft.AI.DependencyCollector.xml
+D:\AppliTrAc\AppliTrAc\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\AppliTrAc\AppliTrAc\bin\Microsoft.AI.Web.xml
+D:\AppliTrAc\AppliTrAc\bin\Microsoft.AI.WindowsServer.xml
+D:\AppliTrAc\AppliTrAc\bin\Microsoft.ApplicationInsights.xml
+D:\AppliTrAc\AppliTrAc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\AppliTrAc\AppliTrAc\bin\System.Web.Helpers.xml
+D:\AppliTrAc\AppliTrAc\bin\System.Web.Mvc.xml
+D:\AppliTrAc\AppliTrAc\bin\System.Web.Optimization.xml
+D:\AppliTrAc\AppliTrAc\bin\System.Web.Razor.xml
+D:\AppliTrAc\AppliTrAc\bin\System.Web.WebPages.xml
+D:\AppliTrAc\AppliTrAc\bin\System.Web.WebPages.Deployment.xml
+D:\AppliTrAc\AppliTrAc\bin\System.Web.WebPages.Razor.xml
+D:\AppliTrAc\AppliTrAc\bin\Antlr3.Runtime.pdb
+D:\AppliTrAc\AppliTrAc\bin\Newtonsoft.Json.xml
+D:\AppliTrAc\AppliTrAc\obj\Debug\AppliTrAc.csprojResolveAssemblyReference.cache
+D:\AppliTrAc\AppliTrAc\obj\Debug\AppliTrAc.dll
+D:\AppliTrAc\AppliTrAc\obj\Debug\AppliTrAc.pdb

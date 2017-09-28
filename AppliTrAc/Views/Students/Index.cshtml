@@ -1,0 +1,77 @@
+﻿@model IEnumerable<AppliTrAc.Models.Student>
+
+    @{
+    ViewBag.Title = "Students";
+    }
+
+<h2 class="well well-small">Students</h2>
+
+    <div>
+        <a class="btn btn-success" href="@Url.Action("Upload")">
+            <i class="icon-plus"></i> Upload
+        </a>
+
+    </div>
+    @using (Html.BeginForm("Index", "Students", FormMethod.Get))
+    {
+    <div>
+        <p>
+            Search by last name: @Html.TextBox("SearchString", ViewBag.CurrentFilter as string)
+            <input type="submit" value="Search" />
+        </p>
+    </div>
+
+    }
+<table id="survey-list" class="table table-striped">
+    <tr>
+        <th class="span8">Student Number</th>
+        <th class="span8">First Name</th>
+        <th>
+            @Html.ActionLink("Last Name(order by)", "Index", new { sortOrder = ViewBag.NameSortParm, currentFilter = ViewBag.CurrentFilter })
+        </th>
+        <th>
+        <th class="span8">Email</th>
+
+        <th></th>
+    </tr>
+
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.StudentID</td>
+            <td>@item.FirstName</td>
+            <td>@item.LastName</td>
+            <td>@item.Email</td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-small dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon-wrench"></i><span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu pull-right">
+                        <li>
+                            <a href="@Url.Action("Details", new {id=item.StudentID})">
+                                <i class="icon-trash"></i> Details
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Edit", new {id=item.StudentID})">
+                                <i class="icon-trash"></i> Edit
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Delete", new {id=item.StudentID})" data-bind="click: destroy">
+                                <i class="icon-list"></i> Delete
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+    }
+</table>
+
+
+
+
+

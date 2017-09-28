@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProjectDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Choice">
+    <Key>
+      <PropertyRef Name="ChoiceID" />
+    </Key>
+    <Property Name="ChoiceID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ChoiceText" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Responses" Relationship="Self.FK_Response_Choice" FromRole="Choice" ToRole="Response" />
+  </EntityType>
+  <EntityType Name="Lecturer">
+    <Key>
+      <PropertyRef Name="LecturerID" />
+    </Key>
+    <Property Name="LecturerID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="Self.FK_Lecturer_User" FromRole="Lecturer" ToRole="User" />
+    <NavigationProperty Name="Modules" Relationship="Self.LecturerModule" FromRole="Lecturer" ToRole="Module" />
+  </EntityType>
+  <EntityType Name="Module">
+    <Key>
+      <PropertyRef Name="ModuleID" />
+    </Key>
+    <Property Name="ModuleID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="None" />
+    <Property Name="ModuleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Lecturers" Relationship="Self.LecturerModule" FromRole="Module" ToRole="Lecturer" />
+    <NavigationProperty Name="Students" Relationship="Self.StudentModule" FromRole="Module" ToRole="Student" />
+  </EntityType>
+  <EntityType Name="Question">
+    <Key>
+      <PropertyRef Name="QuestionID" />
+    </Key>
+    <Property Name="QuestionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="QuestionText" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Responses" Relationship="Self.FK_Response_Question" FromRole="Question" ToRole="Response" />
+  </EntityType>
+  <EntityType Name="Response">
+    <Key>
+      <PropertyRef Name="ResponseID" />
+    </Key>
+    <Property Name="ResponseID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SurveyID" Type="Int32" Nullable="false" />
+    <Property Name="QuestionID" Type="Int32" Nullable="false" />
+    <Property Name="ChoiceID" Type="Int32" Nullable="false" />
+    <Property Name="StudentID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Choice" Relationship="Self.FK_Response_Choice" FromRole="Response" ToRole="Choice" />
+    <NavigationProperty Name="Question" Relationship="Self.FK_Response_Question" FromRole="Response" ToRole="Question" />
+    <NavigationProperty Name="Student" Relationship="Self.FK_Response_Student" FromRole="Response" ToRole="Student" />
+    <NavigationProperty Name="Survey" Relationship="Self.FK_Response_Survey" FromRole="Response" ToRole="Survey" />
+  </EntityType>
+  <EntityType Name="Student">
+    <Key>
+      <PropertyRef Name="StudentID" />
+    </Key>
+    <Property Name="StudentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Responses" Relationship="Self.FK_Response_Student" FromRole="Student" ToRole="Response" />
+    <NavigationProperty Name="Student1" Relationship="Self.FK_Student_Student" FromRole="Student" ToRole="Student1" />
+    <NavigationProperty Name="Student2" Relationship="Self.FK_Student_Student" FromRole="Student1" ToRole="Student" />
+    <NavigationProperty Name="User" Relationship="Self.FK_Student_User" FromRole="Student" ToRole="User" />
+    <NavigationProperty Name="Modules" Relationship="Self.StudentModule" FromRole="Student" ToRole="Module" />
+  </EntityType>
+  <EntityType Name="Survey">
+    <Key>
+      <PropertyRef Name="SurveyID" />
+    </Key>
+    <Property Name="SurveyID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="isActive" Type="Boolean" Nullable="false" />
+    <Property Name="ModuleID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Responses" Relationship="Self.FK_Response_Survey" FromRole="Survey" ToRole="Response" />
+    <NavigationProperty Name="Survey1" Relationship="Self.FK_Survey_Survey1" FromRole="Survey" ToRole="Survey1" />
+    <NavigationProperty Name="Survey2" Relationship="Self.FK_Survey_Survey1" FromRole="Survey1" ToRole="Survey" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="None" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Role" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Lecturer" Relationship="Self.FK_Lecturer_User" FromRole="User" ToRole="Lecturer" />
+    <NavigationProperty Name="Student" Relationship="Self.FK_Student_User" FromRole="User" ToRole="Student" />
+  </EntityType>
+  <Association Name="FK_Response_Choice">
+    <End Role="Choice" Type="Self.Choice" Multiplicity="1" />
+    <End Role="Response" Type="Self.Response" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Choice">
+        <PropertyRef Name="ChoiceID" />
+      </Principal>
+      <Dependent Role="Response">
+        <PropertyRef Name="ChoiceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Lecturer_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="Lecturer" Type="Self.Lecturer" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Lecturer">
+        <PropertyRef Name="LecturerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Response_Question">
+    <End Role="Question" Type="Self.Question" Multiplicity="1" />
+    <End Role="Response" Type="Self.Response" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Question">
+        <PropertyRef Name="QuestionID" />
+      </Principal>
+      <Dependent Role="Response">
+        <PropertyRef Name="QuestionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Response_Student">
+    <End Role="Student" Type="Self.Student" Multiplicity="1" />
+    <End Role="Response" Type="Self.Response" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Student">
+        <PropertyRef Name="StudentID" />
+      </Principal>
+      <Dependent Role="Response">
+        <PropertyRef Name="StudentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Response_Survey">
+    <End Role="Survey" Type="Self.Survey" Multiplicity="1" />
+    <End Role="Response" Type="Self.Response" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Survey">
+        <PropertyRef Name="SurveyID" />
+      </Principal>
+      <Dependent Role="Response">
+        <PropertyRef Name="SurveyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Student_Student">
+    <End Role="Student" Type="Self.Student" Multiplicity="1" />
+    <End Role="Student1" Type="Self.Student" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Student">
+        <PropertyRef Name="StudentID" />
+      </Principal>
+      <Dependent Role="Student1">
+        <PropertyRef Name="StudentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Student_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="Student" Type="Self.Student" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Student">
+        <PropertyRef Name="StudentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Survey_Survey1">
+    <End Role="Survey" Type="Self.Survey" Multiplicity="1" />
+    <End Role="Survey1" Type="Self.Survey" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Survey">
+        <PropertyRef Name="SurveyID" />
+      </Principal>
+      <Dependent Role="Survey1">
+        <PropertyRef Name="SurveyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="LecturerModule">
+    <End Role="Lecturer" Type="Self.Lecturer" Multiplicity="*" />
+    <End Role="Module" Type="Self.Module" Multiplicity="*" />
+  </Association>
+  <Association Name="StudentModule">
+    <End Role="Module" Type="Self.Module" Multiplicity="*" />
+    <End Role="Student" Type="Self.Student" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="ProjectDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Choices" EntityType="Self.Choice" />
+    <EntitySet Name="Lecturers" EntityType="Self.Lecturer" />
+    <EntitySet Name="Modules" EntityType="Self.Module" />
+    <EntitySet Name="Questions" EntityType="Self.Question" />
+    <EntitySet Name="Responses" EntityType="Self.Response" />
+    <EntitySet Name="Students" EntityType="Self.Student" />
+    <EntitySet Name="Surveys" EntityType="Self.Survey" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <AssociationSet Name="FK_Response_Choice" Association="Self.FK_Response_Choice">
+      <End Role="Choice" EntitySet="Choices" />
+      <End Role="Response" EntitySet="Responses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Lecturer_User" Association="Self.FK_Lecturer_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Lecturer" EntitySet="Lecturers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Response_Question" Association="Self.FK_Response_Question">
+      <End Role="Question" EntitySet="Questions" />
+      <End Role="Response" EntitySet="Responses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Response_Student" Association="Self.FK_Response_Student">
+      <End Role="Student" EntitySet="Students" />
+      <End Role="Response" EntitySet="Responses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Response_Survey" Association="Self.FK_Response_Survey">
+      <End Role="Survey" EntitySet="Surveys" />
+      <End Role="Response" EntitySet="Responses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Student_Student" Association="Self.FK_Student_Student">
+      <End Role="Student" EntitySet="Students" />
+      <End Role="Student1" EntitySet="Students" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Student_User" Association="Self.FK_Student_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Student" EntitySet="Students" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Survey_Survey1" Association="Self.FK_Survey_Survey1">
+      <End Role="Survey" EntitySet="Surveys" />
+      <End Role="Survey1" EntitySet="Surveys" />
+    </AssociationSet>
+    <AssociationSet Name="LecturerModule" Association="Self.LecturerModule">
+      <End Role="Lecturer" EntitySet="Lecturers" />
+      <End Role="Module" EntitySet="Modules" />
+    </AssociationSet>
+    <AssociationSet Name="StudentModule" Association="Self.StudentModule">
+      <End Role="Module" EntitySet="Modules" />
+      <End Role="Student" EntitySet="Students" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

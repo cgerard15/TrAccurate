@@ -1,0 +1,61 @@
+﻿@using AppliTrAc.Models
+@model IEnumerable<AppliTrAc.Models.Survey>
+
+
+    
+    @{
+    ViewBag.Title = "Surveys";
+    }
+
+    @section scripts
+    {
+    @Scripts.Render("~/bundles/models")
+    }
+        <h2 class="well well-small">Surveys</h2>
+
+    <table id="survey-list" class="table table-striped">
+        <thead>
+            <tr>
+                <th class="span2">Name</th>
+                <th class="span2">Start Date</th>
+                <th class="span2">End Date</th>
+                <th class="span2">Status</th>
+                <th class="span1">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.StartDate.ToShortDateString()</td>
+                    <td>@item.EndDate.ToShortDateString()</td>
+                    <td>@Html.DisplayFor(x => item.IsActive)</td>
+                    <td>
+                        <div class="btn-group">
+                            <button class="btn btn-small dropdown-toggle" data-toggle="dropdown">
+                                <i class="icon-wrench"></i><span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu pull-right">
+                                <li>
+                                    <a href="@Url.Action("Delete", new {id=item.SurveyID})" data-bind="click: destroy">
+                                        <i class="icon-trash"></i> Delete
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("ViewReport", new {id=item.SurveyID})">
+                                        <i class="icon-list"></i> View Responses
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("CharterColumn", new {id=item.SurveyID})">
+                                        <i class="icon-list"></i> View Chart
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
